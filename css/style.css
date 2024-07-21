@@ -12,10 +12,10 @@
 }
 
 :root {
-  --bg-color: #1f242d;
-  --second-bg-color: #323946;
-  --text-color: #fff;
-  --main-color: #0ef;
+  --bg-color: #36363d;
+  --second-bg-color: #484853;
+  --text-color: #ffffff;
+  --main-color: #01ffb1;
 }
 
 *::selection {
@@ -203,7 +203,7 @@ span {
 .services-container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     flex-wrap: wrap;
     gap: 2rem;
 }
@@ -216,6 +216,10 @@ span {
     text-align: center;
     border: .2rem solid var(--bg-color);
     transition: .5s ease;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .services-container .services-box:hover{
@@ -357,15 +361,38 @@ span {
 
 .footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem 9%;
     background: var(--second-bg-color);
 }
 
-.footer-text p {
+.footer-info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-info h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2.6rem;
+}
+
+.footer-info p,
+.footer-info span {
+    margin-bottom: 1rem;
     font-size: 1.6rem;
+}
+
+.footer-copyright p {
+    font-size: 1.6rem;
+}
+
+.footer-iconTop {
+    position: absolute;
+    right: 0;
+    margin-right: 3rem;
 }
 
 .footer-iconTop a {
@@ -456,7 +483,7 @@ span {
     }
 
     .home-content h1 {
-        font-size: 5%;
+        font-size: 5rem;
     }
 
     .home-img img {

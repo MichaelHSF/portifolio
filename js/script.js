@@ -50,8 +50,8 @@ ScrollReveal().reveal('.homr-content h1, .about-img', {origin: 'left'});
 ScrollReveal().reveal('.homr-content p, .about-content', {origin: 'right'});
 
 /*============================ typed js ============================*/
-const typed = new Typed('multiple-text', {
-    strings: ['Frontend Developer', 'Backend Developer', 'Web Developer'],
+const typed = new Typed('#multiple-text', {
+    strings: ['Desenvolvedor Full-Stack', 'Desenvolvedor Web'],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 100,
