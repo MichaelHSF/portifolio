@@ -57,3 +57,22 @@ const typed = new Typed('#multiple-text', {
     backDelay: 100,
     loop: true
 });
+
+/*============================ light mode ============================*/
+const moon = document.querySelector('.switch');
+const moonImage = document.getElementById('moonImage');
+
+moon.addEventListener('click', function() {
+    document.documentElement.classList.toggle('light-mode');
+    toggleMoonImage(); 
+
+});
+
+/*============================ LUA/SOL - dark/light mode ============================*/
+function toggleMoonImage() {
+if (document.documentElement.classList.contains('light-mode')) {
+    moonImage.src = './assets/images/lua.svg'; 
+} else {
+    moonImage.src = './assets/images/sol.svg'; 
+}
+}
